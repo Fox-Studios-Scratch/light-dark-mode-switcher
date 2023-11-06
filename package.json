@@ -1,16 +1,43 @@
 {
-    "name": "light-dark-mode-switcher",
-    "description": "A VS Code extension that changes the light mode and dark mode.",
-    "version": "1.0.0",
-    "publisher": "Fox Studios - Scratch™",
-    "categories": ["Themes"],
-    "activationEvents": ["onCommand:light-dark-mode-switcher.toggle"],
-    "commands": [
-      {
-        "command": "light-dark-mode-switcher.toggle",
-        "title": "Toggle Light/Dark Mode",
-        "keybinding": "ctrl+alt+shift+t"
-      }
-    ]
-  }
-  
+	"name": "Background Changer",
+	"displayName": "Fox's Background Changer",
+	"description": "change the color of your background from white/black",
+	"version": "0.0.1",
+	"publisher": "Fox Studios - Scratch",
+	"private": false,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "change.background",
+				"title": "change background black/white"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^16.18.34",
+		"@types/vscode": "^1.74.0",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"eslint": "^8.26.0",
+		"typescript": "^5.2.2"
+	}
+}
