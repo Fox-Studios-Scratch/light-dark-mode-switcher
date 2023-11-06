@@ -1,0 +1,16 @@
+{
+    "name": "light-dark-mode-switcher",
+    "description": "A VS Code extension that changes the light mode and dark mode.",
+    "version": "1.0.0",
+    "publisher": "Fox Studios - Scratch™",
+    "categories": ["Themes"],
+    "activationEvents": ["onCommand:light-dark-mode-switcher.toggle"],
+    "commands": [
+      {
+        "command": "light-dark-mode-switcher.toggle",
+        "title": "Toggle Light/Dark Mode",
+        "keybinding": "ctrl+alt+shift+t"
+      }
+    ]
+  }
+  
